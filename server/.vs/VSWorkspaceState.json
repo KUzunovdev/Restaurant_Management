@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\RestaurantManagement.Api"
+    "\\server"
   ],
-  "SelectedNode": "\\RestaurantManagement.Api\\Program.cs",
+  "SelectedNode": "\\server\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

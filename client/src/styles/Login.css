@@ -1,0 +1,72 @@
+/* Enhanced Modern and Aesthetic Login Page Styles */
+.login-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 360px;
+    margin: 5% auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-container label {
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-container input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #ff7f50;
+    outline: none;
+}
+
+.login-container button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #e6735f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        margin: 10% auto;
+    }
+}
