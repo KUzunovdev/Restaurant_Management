@@ -15,9 +15,9 @@ namespace server
 			
 			//connect to the database
 			builder.Services.AddDbContext<ApplicationDbContext>(options =>
-								options.UseSqlServer(builder.Configuration.GetConnectionString("users")));
+								options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-			// Add your custom services here
+			// Add your custom services 
 			builder.Services.AddScoped<OrderService>();
 			builder.Services.AddScoped<OrderDetailService>();
 
