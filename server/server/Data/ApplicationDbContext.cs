@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using server.Models;
 
 namespace server.Data
 {
@@ -10,5 +11,21 @@ namespace server.Data
 		}
 
 		public DbSet<Models.UserEntity> Users { get; set; }
+		
+		public DbSet<Order> Orders { get; set; }
+		public DbSet<OrderDetail> OrderDetails { get; set; }
+		public DbSet<MenuItem> MenuItems { get; set; }
+
+		/*
+
+		Configuring the database relationships here
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			base.OnModelCreating(modelBuilder);
+
+			
+			
+		}
+		*/
 	}
 }
