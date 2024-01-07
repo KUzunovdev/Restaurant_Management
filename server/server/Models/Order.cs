@@ -1,19 +1,25 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace server.Models
 {
 	public class Order
 	{
 		[Key]
-		public int OrderId { get; set; }
+		public int OrderID { get; set; }
 
-		public int CustomerId { get; set; } // Foreign key for Customer
+		public int CustomerID { get; set; }
 
+		[Column(TypeName = "datetime2")]
 		public DateTime OrderDate { get; set; }
 
+		[Column(TypeName = "decimal(18, 2)")]
 		public decimal TotalPrice { get; set; }
 
-		// Navigation property for related OrderDetails
-		public virtual List<OrderDetail> OrderDetails { get; set; }
+		// Navigation properties
+		public virtual Customer Customer { get; set; }
+		public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+		public virtual ICollection<Staff> StaffMembers { get; set; }
 	}
 }

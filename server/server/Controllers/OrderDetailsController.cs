@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*using Microsoft.AspNetCore.Mvc;
 using server.Services;
 
 namespace server.Controllers
@@ -16,3 +16,4 @@ namespace server.Controllers
 		}
 	}
 }
+*/

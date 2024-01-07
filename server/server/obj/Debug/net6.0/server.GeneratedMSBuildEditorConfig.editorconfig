@@ -5,40 +5,53 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = server
 build_property.RootNamespace = server
-build_property.ProjectDir = F:\V.A\University\2RI KURS\1ВИ СЕМЕСТЪР\New folder\Restaurant_Management\server\server\
+build_property.ProjectDir = D:\work\restaurant management\server\server\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\V.A\University\2RI KURS\1ВИ СЕМЕСТЪР\New folder\Restaurant_Management\server\server
+build_property.MSBuildProjectDirectory = D:\work\restaurant management\server\server
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/V.A/University/2RI KURS/1ВИ СЕМЕСТЪР/New folder/Restaurant_Management/server/server/Views/Home/Index.cshtml]
+[D:/work/restaurant management/server/server/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/V.A/University/2RI KURS/1ВИ СЕМЕСТЪР/New folder/Restaurant_Management/server/server/Views/Home/Privacy.cshtml]
+[D:/work/restaurant management/server/server/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/V.A/University/2RI KURS/1ВИ СЕМЕСТЪР/New folder/Restaurant_Management/server/server/Views/Shared/Error.cshtml]
+[D:/work/restaurant management/server/server/Views/Orders/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXE9yZGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/restaurant management/server/server/Views/OrderView/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJWaWV3XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/restaurant management/server/server/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/V.A/University/2RI KURS/1ВИ СЕМЕСТЪР/New folder/Restaurant_Management/server/server/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/work/restaurant management/server/server/Views/Shared/Table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/work/restaurant management/server/server/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/V.A/University/2RI KURS/1ВИ СЕМЕСТЪР/New folder/Restaurant_Management/server/server/Views/_ViewImports.cshtml]
+[D:/work/restaurant management/server/server/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/V.A/University/2RI KURS/1ВИ СЕМЕСТЪР/New folder/Restaurant_Management/server/server/Views/_ViewStart.cshtml]
+[D:/work/restaurant management/server/server/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/V.A/University/2RI KURS/1ВИ СЕМЕСТЪР/New folder/Restaurant_Management/server/server/Views/Shared/_Layout.cshtml]
+[D:/work/restaurant management/server/server/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1xixji3jxu

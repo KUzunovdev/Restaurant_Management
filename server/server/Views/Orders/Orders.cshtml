@@ -1,0 +1,95 @@
+﻿@{
+    // Server-side logic to get order details
+    var orderDate = "29.12.2012";
+    var items = new Dictionary<string, int>
+    {
+        {"Burgers", 2},
+        {"Cola", 1}
+    };
+    var total = "$100";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Details</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-left: 5px solid transparent;
+        }
+        .sidebar a:hover, .sidebar a.active {
+            border-left: 5px solid red;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .order-details {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .order-details h2 {
+            margin-top: 0;
+        }
+        .order-details dt {
+            float: left;
+            clear: left;
+            width: 100px;
+            text-align: right;
+            font-weight: bold;
+        }
+        .order-details dd {
+            margin: 0 0 0 110px;
+            padding: 0 0 5px 0;
+        }
+        .order-details .total {
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>User</h1>
+        <a href="/menu">Menu</a>
+        <a href="/tables">Tables</a>
+        <a href="/orders" class="active">Orders</a>
+        <a href="/reservations">Reservations</a>
+    </div>
+    <div class="content">
+        <div class="order-details">
+            <h2>Order Details</h2>
+            <dl>
+                <dt>Date:</dt>
+                <dd>@orderDate</dd>
+                <dt>Items:</dt>
+                @foreach (var item in items)
+                {
+                        <dd>@item.Value x @item.Key</dd>
+                }
+                <dt>Total:</dt>
+                <dd class="total">@total</dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>

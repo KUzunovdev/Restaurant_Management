@@ -1,0 +1,73 @@
+﻿@{
+	// Any C# variables or logic would go up here
+	var tableStatuses = new[] { "Occupied", "Occupied", "Available", "Occupied" };
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Restaurant Management Dashboard</title>
+	<style>
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-left: 5px solid transparent;
+        }
+        .sidebar a:hover {
+            border-left: 5px solid red;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .table {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100px;
+            color: white;
+        }
+        .occupied {
+            background-color: red;
+        }
+        .available {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+	<h1>User</h1>
+	<a href="/menu">Menu</a>
+	<a href="/tables">Tables</a>
+	<a href="/orders">Orders</a>
+	<a href="/reservations">Reservations</a>
+</div>
+<div class="content">
+	@foreach (var status in tableStatuses) {
+		<div class="table @(status == "Available" ? "available" : "occupied")">
+			@status
+		</div>
+	}
+</div>
+</body>
+</html>

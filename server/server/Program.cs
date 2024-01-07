@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using server.Data;
-using server.Services;
+//using server.Services;
 
 namespace server
 {
@@ -17,9 +17,10 @@ namespace server
 			builder.Services.AddDbContext<ApplicationDbContext>(options =>
 								options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-			// Add your custom services 
+			/* Add your custom services 
 			builder.Services.AddScoped<OrderService>();
 			builder.Services.AddScoped<OrderDetailService>();
+			*/
 
 			var app = builder.Build();
 

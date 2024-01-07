@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*
+using Microsoft.AspNetCore.Mvc;
 using server.Data;
 using server.Models;
 
@@ -47,3 +48,4 @@ namespace server.Controllers
 
 	}
 }
+*/
