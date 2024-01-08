@@ -11,7 +11,8 @@ namespace server.Models
 		public int Number { get; set; }
 
 		public int Capacity { get; set; }
-
-		// Navigation property for Reservations (one-to-many)
-		public virtual ICollection<Reservation> Reservations { get; set; } }
+        public bool IsOccupied { get; set; }
+        // Navigation property for Reservations (one-to-many)
+        public virtual ICollection<Reservation> Reservations { get; set; }
+	}
 }
